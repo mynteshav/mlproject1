@@ -1,5 +1,5 @@
 import sys
-import logging
+from src.logger import logging
 # Custom exception handling
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()   #It show that in which file or line the error is occured.
@@ -21,6 +21,5 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message # whenever i try to print I'll be getting the error message over here.
-
-
-
+    
+    
